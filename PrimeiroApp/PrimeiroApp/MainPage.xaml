@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PrimeiroApp.MainPage">
 
-    <StackLayout BackgroundColor="#A8006C">
+    <StackLayout x:Name="fundo" BackgroundColor="#A8006C">
         <Frame BackgroundColor="#F51BA7" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="white" FontSize="36"/>
+            <Label  Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="white" FontSize="36"/>
         </Frame>
         <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
         <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
@@ -23,6 +23,11 @@
         <Entry  x:Name="txtNome"  Placeholder="Digite uma palavra" Text=""/>
         <Button x:Name="btnVerificar" Text="Verificar" Clicked="btnVerificar_Clicked" TextColor="#31F51B" />
         <Button x:Name="btnLimpar" Text="Limpar" Clicked="btnLimpar_Clicked" TextColor="#31F51B"/>
+        <Button x:Name="btnCorFundo" Text="Mudar cor de Fundo" Clicked="btnTrocar_Clicked" TextColor="#31F51B" />
+        <Button x:Name="btnInformarDataNascimento" Text="Informar a Data de nascimento" Clicked="btnInformarDataNascimento_Clicked" TextColor="#31F51B" />
+        <Label x:Name="lblDataNascimento" />
+        <Button x:Name="btnOpcoes" Text="Opções" Clicked="btnOpcoes_Clicked" />
+
     </StackLayout>
 
 </ContentPage>
